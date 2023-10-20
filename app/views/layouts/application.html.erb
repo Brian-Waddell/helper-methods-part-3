@@ -42,7 +42,7 @@
             <a class="nav-link" href="#">Link</a>
           </li>
         </nav> 
-
+    <div class = "container mt-3" > 
     <% if notice.present? %> 
     <div class = "alert alert-success" role = "alert">
       <%= notice %>
@@ -52,7 +52,8 @@
     <div class = "alert alert-danger" role = "alert"> 
       <%= alert %>
     </div>
-    <%end%> 
-    <%= yield %>
+      <%end%> 
+  <%= yield %>
+  </div> 
   </body>
 </html>
